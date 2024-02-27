@@ -10,6 +10,8 @@ Eatry is a web application built using Python, HTML, CSS, and JavaScript. It all
 - **User Dashboard**: A personalized dashboard where users can manage their bookings and account settings.
 - **Admin Panel**: Administrators have access to an admin panel to manage restaurants, tables, and user bookings.
 
+  []("https://github.com/RNNivash/Eatry/assets/90308206/e2cdf7b5-2435-407a-9789-5bff4668f785").
+
 ## Technologies Used
 - **Frontend**:
   - HTML
