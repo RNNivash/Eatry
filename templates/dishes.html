@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Pre-booking app</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/animate.css" />
+    <link rel="stylesheet" href="/static/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/static/css/magnific-popup.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/templatemo-style.css" />
+
+    <style>
+      .oul-item {
+        width: 100vw;
+      }
+      .navbar {
+        width: 100vw;
+      }
+
+      #menu {
+        width: 100%;
+      }
+      .menu-img {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PRE LOADER -->
+    <section class="preloader" style="display: none">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section
+      class="navbar custom-navbar navbar-fixed-top top-nav-collapse"
+      role="navigation"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand" style="color: black">
+            <i class="fas fa-arrow-left"></i
+          ></a>
+          <!-- lOGO TEXT HERE -->
+          <a href="/" class="navbar-brand" style="color: black"
+            >Eatery <span>.</span> Cafe</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU-->
+    <section
+      id="menu"
+      data-stellar-background-ratio="0.5"
+      style="background-position: 0% 364px"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div
+              class="section-title wow fadeInUp animated"
+              data-wow-delay="0.1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInUp;
+              "
+            >
+              <h2>Our Menus</h2>
+              <h4>Tea Time &amp; Dining</h4>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/Chapathi" method="get">
+              <button
+                type="submit"
+                class="section-btn"
+                formaction="/food/Chapathi"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Tamil food/Chapathi.jpeg"
+                  class="image-popup"
+                  title="American Breakfast"
+                >
+                  <img
+                    src="/static/images/Tamil food/Chapathi.jpeg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>Chapathi</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$25</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/ChetinaduChicken" method="get">
+              <button
+                type="submit"
+                class="section-btn"
+                formaction="/food/ChetinaduChicken"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Tamil food/Chetinadu Chicken.jpg"
+                  class="image-popup"
+                  title="Self-made Salad"
+                >
+                  <img
+                    src="/static/images/Tamil food/Chetinadu Chicken.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>Chetinadu Chicken</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$18</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/Idli" method="get">
+              <button type="submit" class="section-btn" formaction="/food/Idli">
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Tamil food/Idli.jpg"
+                  class="image-popup"
+                  title="Chinese Noodle"
+                >
+                  <img
+                    src="/static/images/Tamil food/Idli.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>Idli</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$34</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/Chinesespringroll" method="get">
+              <button
+                type="submit"
+                class="section-btn"
+                formaction="/food/Chinesespringroll"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Chinese Food/Chinese spring roll.jpg"
+                  class="image-popup"
+                  title="Rice Soup"
+                >
+                  <img
+                    src="/static/images/Chinese Food/Chinese spring roll.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>Chinese spring roll</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$28</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/Italianomomo" method="get">
+              <button
+                type="submit"
+                class="section-btn"
+                formaction="/food/Italianomomo"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Chinese Food/Italiano momo.jpg"
+                  class="image-popup"
+                  title="Project title"
+                >
+                  <img
+                    src="/static/images/Chinese Food/Italiano momo.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>Italiano momo</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$46</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/redsaucypasta" method="get">
+              <button
+                type="submit"
+                class="section-btn"
+                formaction="/food/redsaucypasta"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Chinese Food/red saucy pasta.jpg"
+                  class="image-popup"
+                  title="Project title"
+                >
+                  <img
+                    src="/static/images/Chinese Food/red saucy pasta.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>red saucy pasta.jpg</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$30</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/asian-chinesechopsticksdimsum" method="get">
+              <button
+                class="section-btn"
+                type="submit"
+                formaction="/food/asian-chinesechopsticksdimsum"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Italian food/asian-chinese chopsticks dimsum.jpg"
+                  class="image-popup"
+                  title="Project title"
+                >
+                  <img
+                    src="/static/images/Italian food/asian-chinese chopsticks dimsum.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>asian-chinese chopsticks dimsum</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$30</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/Italianoprawnpasta" method="get">
+              <button
+                type="submit"
+                class="section-btn"
+                formaction="/food/Italianoprawnpasta"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Italian food/Italiano prawn pasta.jpg"
+                  class="image-popup"
+                  title="Project title"
+                >
+                  <img
+                    src="/static/images/Italian food/Italiano prawn pasta.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>Italiano prawn pasta</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$30</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <form action="/food/quickprawnnoodle" method="get">
+              <button
+                type="submit"
+                class="section-btn"
+                formaction="/food/quickprawnnoodle"
+              >
+                Select
+              </button>
+              <div class="menu-thumb">
+                <a
+                  href="/static/images/Italian food/quick prawn noodle.jpg"
+                  class="image-popup"
+                  title="Project title"
+                >
+                  <img
+                    src="/static/images/Italian food/quick prawn noodle.jpg"
+                    class="img-responsive menu-img"
+                    alt=""
+                  />
+
+                  <div class="menu-info">
+                    <div class="menu-item">
+                      <h3>quick prawn noodle</h3>
+                    </div>
+                    <div class="menu-price">
+                      <span>$30</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/smoothscroll.js"></script>
+    <script src="/static/js/custom.js"></script>
+  </body>
+</html>

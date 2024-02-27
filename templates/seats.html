@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pre-booking app</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/animate.css" />
+    <link rel="stylesheet" href="/static/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/static/css/magnific-popup.css" />
+
+    <script src="https://use.fontawesome.com/a0b0952e4d.js"></script>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/static/css/templatemo-style.css" />
+
+    <style>
+      .box {
+        height: 50px;
+        width: 50px;
+        background: red;
+        border-radius: 08px;
+      }
+      .col-md-3 {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    ​
+    <!-- MENU -->
+    <section
+      class="navbar custom-navbar navbar-fixed-top"
+      role="navigation"
+      style="background: white"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand" style="color: black">
+            <i class="fas fa-arrow-left"></i
+          ></a>
+          <!-- lOGO TEXT HERE -->
+          <a href="/" class="navbar-brand" style="color: black"
+            >Eatery <span>.</span> Cafe</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid" style="padding: 0px">
+      <!-- CONTACT -->
+      <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row">
+            <!-- How to change your own map point
+              1. Go to Google Maps
+              2. Click on your location point
+              3. Click "Share" and choose "Embed map" tab
+              4. Copy only URL and paste it within the src="" field below
+      -->
+
+            <div class="col-md-12">
+              <div class="col-md-12 col-sm-12">
+                <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                  <h2>Book your seat</h2>
+                </div>
+              </div>
+
+              <form
+                method="post"
+                class="wow fadeInUp"
+                id="contact-form"
+                role="form"
+                data-wow-delay="0.8s"
+              >
+                <div class="col-md-6 col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cf-name"
+                    name="name"
+                    placeholder="Full name"
+                  />
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="cf-email"
+                    name="phone"
+                    placeholder="Phone number"
+                  />
+                </div>
+                
+
+                <div class="col-md-6 col-sm-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="cf-subject"
+                    name="email"
+                    placeholder="E-mail"
+                  /></div>
+                  <div class="col-md-6 col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control text-muted"
+                      id="cf-subject"
+                      name="dish"
+                      placeholder="Dish"
+                      value={{dish}}
+                    /></div>
+
+                  <div
+                    class="col-md-12 col-sm-12"
+                    style="margin: 20px 0; padding: 0px"
+                  >
+                    <select
+                    name="seat"
+                      style="border-color: #dddddd; background: white"
+                      class="form-select"
+                      id="inputGroupSelect03"
+                      aria-label="Example select with button addon"
+                    >
+                      <option selected>Choose...</option>
+                      {% for table in ls %}
+                      <option value="{{table}}">{{table}}</option>
+                      {% endfor %}
+                      
+                      
+                    </select>
+                  </div>
+
+                  <div
+                    class="col-md-12 col-sm-12"
+                    style="margin: 20px 0; padding: 0px"
+                  >
+                    <input name="datetime" type="datetime-local" id="datetime-local" />
+                  </div>
+
+                  <textarea
+                    class="form-control"
+                    rows="6"
+                    id="cf-message"
+                    name="message"
+                    placeholder="Comments"
+                  ></textarea>
+
+                  <button
+                    type="submit"
+                    class="form-control"
+                    id="cf-submit"
+                    name="submit"
+                    style="background: green"
+                  >
+                    Book now ₹ 500
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      ​
+    </section>
+  </body>
+</html>
+​
